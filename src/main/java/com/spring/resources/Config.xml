@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+
+	<bean name="address" class="com.spring.dao.Address">
+		<property name="street" value="narayal pally"></property>
+		<property name="city" value="siliguri"></property>
+
+	</bean>
+	<bean name="student" class="com.spring.dao.Student">
+		<property name="id" value="101"></property>
+		<property name="name" value="one"></property>
+		<property name="Address" ref="address"></property>
+
+	</bean>
+
+
+
+</beans>
